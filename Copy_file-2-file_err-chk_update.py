@@ -9,11 +9,11 @@ prompt4 = ('No, really; just \'Yes\' or \'No\' ')
 
 print """
 
-======================================
-This is the Replicator Script
-Stargate fans know what that can mean
-Use with Extream Caution
-======================================
+=========================================
+  This is the Replicator Script
+  Stargate fans know what that can mean
+  Use with Extream Caution
+=========================================
 """
 print '\nFirst, I\'ll need to know the source file...'
 print '(if it\'s not in the local working directory, you\'ll \
@@ -129,7 +129,7 @@ while index <= 3:
 			
 		elif readit2 == "no":
 			print '\nReally?!? Wow!! You\'re a trusting sole! 8^)'
-			print '(personally, I would have checked... just sayin\'...)'
+			print '(personally, I would have checked... just sayin\'...\n)'
 			index=20
 			
 	if index == 2:
@@ -138,29 +138,29 @@ while index <= 3:
 
 	Come on, fella... help me out here...
 
-	Please enter 'Yes' or 'No'
+	Just enter 'Yes' or 'No'
 
 	'''
 		answer3 = raw_input(prompt4)
-		print '\nYou answered %r this time\n' % answer3
+		print '\nYou answered %r this time' % answer3
 		readit3 = str(answer3.lower())
 
 		if readit3 == "yes":
-			print '====== Start of File ======'
+			print '\n====== Start of File ======'
 			outdata.seek(0)
 			for line in outdata:
 				x = line
 				print (x)
-			print '====== End of File ======'
-			print '\n All done...\n'
-			print 'guess "third time\'s the charm, eh?...'
+			print '\n====== End of File ======'
+			print '\n All done...'
+			print '     (guess "third time\'s the charm for you, eh?...)\n'
 			outdata.close()
 			index=10
 			
 		elif readit3 == "no":
 			print '\nReally?!? Wow!! You\'re a trusting sole! 8^)'
 			print '(personally, I would have checked... just sayin\'...)'
-			print 'guess "third time\'s the charm, eh?...'
+			print '     (guess "third time\'s the charm for you, eh?...)\n'
 			index=20
 			
 	if index == 3:
